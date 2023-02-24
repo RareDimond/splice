@@ -45,6 +45,19 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+/**/
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/**/
+.menu__box > li {
+  display: inline;
+  margin-left: 19px;
+}
+.menu__box > li:first-child {
+  margin-left: -12px;
+}
 .login {
   grid-column-start: 4;
 }
@@ -58,8 +71,6 @@ header {
   border: none;
 }
 .float-window-sticky {
-  position: sticky;
-  top: 71px;
   height: 46px;
   background: #0033ff;
   padding: 11px 240px 11px 280px;
@@ -80,6 +91,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+/*section1*/
 .section-1-back {
   background: url("./assets/images/back-image-1.png");
   width: 1200px;

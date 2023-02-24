@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <div class="main-container">
+      <!-- header -->
       <header>
         <div class="header">
           <div class="header-flex">
             <img src="./assets/images/logo.png" alt="image" />
           </div>
           <div class="header-flex">
-            <a href="#">Sounds</a>
-            <a href="#">Skills</a>
-            <a href="#">Plugins</a>
-            <a href="#">Studio</a>
-            <a href="#">Community</a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
+            <!---->
+            <div class="hamburger-menu header-flex">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+              <ul class="menu__box">
+                <li><a class="menu__item" href="#">Sounds</a></li>
+                <li><a class="menu__item" href="#">Skills</a></li>
+                <li><a class="menu__item" href="#">Plugins</a></li>
+                <li><a class="menu__item" href="#">Studio</a></li>
+                <li><a class="menu__item" href="#">Community</a></li>
+                <li><a class="menu__item" href="#">Blog</a></li>
+                <li><a class="menu__item" href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <!---->
           </div>
           <div class="login header-flex">
             <div><a href="#">Login</a></div>
@@ -30,16 +43,16 @@
             </div>
           </div>
         </div>
+        <div class="float-window-sticky float-window-flex">
+          <div class="wrap">
+            <span>🤘 Get free Sounds when you start a trial &</span>
+            <span> 4 months off a Sounds+ annual plan.</span>
+          </div>
+          <div class="wrap"><span>Click</span> <span> here</span></div>
+        </div>
       </header>
-      <div class="float-window-sticky float-window-flex">
-        <div>
-          🤘 Get free Sounds when you start a trial & 4 months off a Sounds+
-          annual plan.
-        </div>
-        <div>
-          <a href="#">Click here</a>
-        </div>
-      </div>
+
+      <!-- section 1 
       <section>
         <div class="section-1-back">
           <div class="section-1-text-1">
@@ -53,17 +66,17 @@
             <button class="button-blue button-size-1">Try free</button>
           </div>
           <div class="section-1-link">
-            <div><a href="#">Learn more</a></div>
+            <div><a href="#section-2">Learn more</a></div>
             <div class="section-1-link-1">
-              <a href="#"
+              <a href="#section-2"
                 ><img src="./assets/images/arrow-section1.svg" alt="image"
               /></a>
             </div>
           </div>
         </div>
       </section>
-      <!-- section 2 -->
-      <section>
+      <!-- section 2 
+      <section id="section-2">
         <div class="section-overall">
           <div class="section-overall-text-area section-2-pos">
             <div class="section-overall-text1">SOUNDS</div>
@@ -81,15 +94,23 @@
             </div>
           </div>
           <div class="section-overall-image-area">
-            <img src="./assets/images/side-mage.png" alt="image" />
+            <img
+              class="img-width"
+              src="./assets/images/side-mage.png"
+              alt="image"
+            />
           </div>
         </div>
       </section>
-      <!-- section 3 -->
+      <!-- section 3 
       <section>
         <div class="section-overall">
           <div class="section-overall-image-area">
-            <img src="./assets/images/side-mage1.png" alt="image" />
+            <img
+              class="img-width"
+              src="./assets/images/side-mage1.png"
+              alt="image"
+            />
           </div>
           <div class="section-overall-text-area section-3-pos">
             <div class="section-overall-text1 align-right">
@@ -106,7 +127,7 @@
           </div>
         </div>
       </section>
-      <!-- section 4 -->
+      <!-- section 4 
       <section>
         <div class="section-overall">
           <div class="section-overall-text-area section-4-pos">
@@ -123,15 +144,23 @@
             </div>
           </div>
           <div class="section-overall-image-area">
-            <img src="./assets/images/side-mage2.png" alt="image" />
+            <img
+              class="img-width"
+              src="./assets/images/side-mage2.png"
+              alt="image"
+            />
           </div>
         </div>
       </section>
-      <!-- section 5 -->
+      <!-- section 5 
       <section>
         <div class="section-overall">
           <div class="section-overall-image-area">
-            <img src="./assets/images/side-mage3.png" alt="image" />
+            <img
+              class="img-width"
+              src="./assets/images/side-mage3.png"
+              alt="image"
+            />
           </div>
           <div class="section-overall-text-area section-5-pos">
             <div class="section-overall-text1 align-right">TECHNOLOGY</div>
@@ -150,17 +179,17 @@
           </div>
         </div>
       </section>
-      <!-- section 6 -->
+      <!-- section 6 
       <section>
         <div class="section-6-grid">
           <div class="section-6-column-1">
             What creators are saying about Splice
           </div>
           <div class="back-white">
-            <div class="section-6-area-1">
+            <div class="section-6-area-1 section-6-flex">
               <img src="./assets/images/circle-image1.png" alt="image" />
             </div>
-            <div class="section-6-area-2">
+            <div class="section-6-area-2 section-6-flex">
               <blockquote>
                 I can always find what I’m looking for on Splice, whether it’s
                 the exact sound I want or just a bit of inspiration.
@@ -169,10 +198,10 @@
             <div class="section-6-area-3">Andrew Huang</div>
           </div>
           <div class="back-white">
-            <div class="section-6-area-1">
+            <div class="section-6-area-1 section-6-flex">
               <img src="./assets/images/circle-image2.png" alt="image" />
             </div>
-            <div class="section-6-area-2">
+            <div class="section-6-area-2 section-6-flex">
               <blockquote>
                 Finally a way to buy plugins that works. By paying a little at a
                 time, producers can get legit access to the top VSTs.
@@ -181,10 +210,10 @@
             <div class="section-6-area-3">KSHMR</div>
           </div>
           <div class="back-white">
-            <div class="section-6-area-1">
+            <div class="section-6-area-1 section-6-flex">
               <img src="./assets/images/circle-image3.png" alt="image" />
             </div>
-            <div class="section-6-area-2">
+            <div class="section-6-area-2 section-6-flex">
               <blockquote>
                 It’s been fun to dive into Splice’s creator community and
                 explore tools that support my own creative process.
@@ -194,7 +223,7 @@
           </div>
         </div>
       </section>
-      <!-- section 7 -->
+      <!-- section 7 
       <section>
         <div class="section-7-back">
           <div>
@@ -205,12 +234,12 @@
           </div>
         </div>
       </section>
-      <!-- footer -->
-      <footer>
+      <!-- footer 
+      <footer class="mobile-flex">
         <div class="footer-grid">
           <div class="footer-flex">
             <div class="footer-text">Skills</div>
-            <div><a href="#"> Features</div>
+            <div><a href="#"> Features</a></div>
             <div class="footer-row-1"><a href="#">Catalog</a></div>
             <div class="footer-text">Studio</div>
             <div><a href="#">Features</a></div>
@@ -219,7 +248,7 @@
             <div><a href="#">Collaborating with Baewatch</a></div>
           </div>
           <div class="footer-flex grid-2-1">
-            <div class="footer-text">Community</a></div>
+            <div class="footer-text">Community</div>
             <div><a href="#">Ableton Live Projects</a></div>
             <div><a href="#">FL Studio Projects</a></div>
             <div><a href="#">Logic Pro X Projects</a></div>
@@ -265,11 +294,14 @@
             <div><a href="#">Contact</a></div>
             <div><a href="#">Help</a></div>
             <div class="link-facebook">
-              <a href="#"><img src="./assets/images/facebook.svg" alt="link" /></a>
+              <a href="#"
+                ><img src="./assets/images/facebook.svg" alt="link"
+              /></a>
             </div>
           </div>
         </div>
       </footer>
+      -->
     </div>
   </body>
 </html>

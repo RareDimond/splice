@@ -1,0 +1,289 @@
+@media screen and (max-width: 800px) {
+  .main-container {
+    max-width: 1200px;
+  }
+  .header {
+    grid-template-columns: auto auto auto 157px;
+    grid-column-gap: 29px;
+    margin: 0px 5px 0px 5px;
+    height: 71px;
+  }
+  /* скрываем чекбокс */
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 25px;
+    left: 110px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 340px;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    background: url("./assets/images/rickback.png");
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+  }
+  /* элементы меню */
+  /*.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #ec0b0b;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }*/
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .float-window-sticky {
+    padding: 0px;
+    max-width: 1200px;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrap > span:first-child::after {
+    content: "";
+    margin-right: 4px;
+  }
+
+  /*section1*/
+  .section-1-back {
+    width: auto;
+    height: auto;
+    grid-template-rows: 156px 48px 74px 68px;
+    padding-top: 40px;
+    padding-right: 0px;
+  }
+  .section-1-text-1 {
+    font-size: 50px;
+  }
+  .section-1-text-2 {
+    font-family: "Roboto Regular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+    width: 412px;
+  }
+  .button-blue {
+    font-size: 14px;
+  }
+  .button-size-1 {
+    width: 100px;
+    height: 45px;
+  }
+  .section-1-link {
+    margin-top: 0px;
+  }
+
+  /*section2*/
+  .section-overall {
+    padding: 0px 10px 0px 10px;
+    margin-top: 30px;
+  }
+  .img-width {
+    max-width: 100%;
+    height: auto;
+  }
+  .section-2-pos {
+    margin-top: 50px;
+  }
+  /*section3*/
+  .section-3-pos {
+    margin-top: 50px;
+  }
+  /*section4*/
+  .section-4-pos {
+    margin-top: 20px;
+  }
+  /*section5*/
+  .section-5-pos {
+    margin-top: 10px;
+  }
+  /*section6*/
+  .section-6-grid {
+    grid-template-columns: fit-content(361px) fit-content(361px) fit-content(
+        361px
+      );
+    margin: 50px 5px 0px 5px;
+  }
+  .section-6-area-1 {
+    margin: 0px 0px 0px 0px;
+  }
+  .section-6-area-2 {
+    margin: 10px 10px 0px 10px;
+    width: auto;
+  }
+  .section-6-area-3 {
+    margin: 5px 0px 0px 25px;
+  }
+  .section-6-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .section-1-back {
+    width: auto;
+    height: auto;
+    grid-template-rows: 156px 48px 74px 68px;
+    padding-top: 40px;
+    padding-right: 0px;
+  }
+  .section-7-back {
+    background: url("./assets/images/bac-image-2.png");
+    width: auto;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*footer*/
+  .mobile-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 266px 101px;
+    padding: 48px 0px 40px 10px;
+    color: #a6a8ad;
+  }
+  /* скрываем чекбокс */
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 25px;
+    left: 110px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 340px;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .float-window-sticky {
+    z-index: -1;
+  }
+}
