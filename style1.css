@@ -15,7 +15,7 @@
   /**/
   .menu__box > li {
     display: inline;
-    margin-left: 10px;
+    margin-left: 9px;
   }
   .float-window-flex {
     max-width: 1200px;
@@ -28,6 +28,7 @@
 
   /*section1*/
   .section-1-back {
+    background: url("./assets/images/back-image-1.png");
     width: auto;
     height: auto;
     grid-template-rows: 156px 48px 74px 68px;
@@ -101,22 +102,19 @@
     display: flex;
     justify-content: center;
   }
-  .section-1-back {
-    width: auto;
-    height: auto;
-    grid-template-rows: 156px 48px 74px 68px;
-    padding-top: 40px;
-    padding-right: 0px;
-  }
+
   .section-7-back {
     background: url("./assets/images/bac-image-2.png");
     width: auto;
-    height: 500px;
+    height: 400px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .section-7-text {
+    color: #fff;
   }
   /*footer*/
   .mobile-flex {

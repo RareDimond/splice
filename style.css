@@ -359,3 +359,6 @@ header {
 .link-facebook {
   margin-left: 7px;
 }
+.stickk {
+  position: sticky;
+}
